@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Confidentialité — Ahzab</title>
+  <meta name="description" content="Politique de confidentialité d’Ahzab : ce qui reste sur ton téléphone, ce qui en part, et pourquoi.">
+  <link rel="canonical" href="https://ismaeltag-ui.github.io/ahzab/confidentialite/">
+  <style>
+  :root {
+    --bg: #ffffff; --card: #ffffff; --text: #0b0b0c; --muted: #5c5c63; --line: #e4e4e8; --link: #0b0b0c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #000000; --card: #0f0f11; --text: #f4f4f6; --muted: #a1a1aa; --line: #26262b; --link: #f4f4f6;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #000000; --card: #0f0f11; --text: #f4f4f6; --muted: #a1a1aa; --line: #26262b; --link: #f4f4f6;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 680px; margin: 0 auto; padding: 56px 16px 72px; }
+  .brand { font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin: 0 0 8px; }
+  h1 { font-size: 34px; line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 6px; }
+  .updated { color: var(--muted); font-size: 14px; margin: 0 0 32px; }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 20px 20px 6px; margin: 0 0 14px; }
+  h2 { font-size: 18px; letter-spacing: -0.01em; margin: 0 0 10px; }
+  p { color: var(--muted); margin: 0 0 14px; }
+  a { color: var(--link); text-underline-offset: 3px; }
+  footer { color: var(--muted); font-size: 13px; text-align: center; margin-top: 32px; }
+</style>
+</head>
+<body>
+  <main>
+    <p class="brand">Ahzab</p>
+    <h1>Confidentialité</h1>
+    <p class="updated">Mise à jour le 5 octobre 2026</p>
+
+      <section id="en-bref">
+        <h2>En bref</h2>
+        <p>Ahzab fonctionne sans compte. Ta progression, tes fautes et tes récitations gardées restent sur ton téléphone.</p>
+        <p>Ta voix est écoutée par la reconnaissance vocale de ton téléphone pour suivre ta récitation. Ahzab ne l’envoie nulle part, sauf quand tu le demandes d’un geste : une récitation transmise à un partenaire, ou, pendant la bêta, une erreur de reconnaissance signalée.</p>
+        <p>Pas de publicité, aucune donnée vendue, aucun pistage publicitaire.</p>
+      </section>
+      <section id="ta-voix">
+        <h2>Ta voix</h2>
+        <p>La reconnaissance est celle du système : Apple sur iPhone et iPad, le service vocal d’Android (souvent celui de Google). Quand le modèle de langue est installé sur le téléphone, tout se passe sur l’appareil ; sinon, le service du téléphone traite la voix sur ses serveurs, selon ses propres règles. Ahzab ne garde jamais hors du téléphone le texte qu’il a reconnu.</p>
+        <p>Une récitation que tu choisis de transmettre à un partenaire est déposée sur nos serveurs, lisible par lui seul pendant trente jours.</p>
+        <p>Pendant la bêta, « La reconnaissance s’est trompée » envoie le contexte de l’erreur (le verset, le mot attendu, ce que le moteur a entendu) et un extrait de ta voix de vingt secondes au plus, pour corriger la reconnaissance ; il est effacé une fois analysé. Ce signalement se coupe dans Paramètres › Développeur.</p>
+        <p>Sur iPhone et iPad, l’essai du « Modèle de langue du Coran » (Paramètres › Développeur) ne part que si tu lances son banc : il fait écrire au moteur des versets lus par un imam de l’application, jamais ta voix, et envoie sur ton compte ce que le moteur a écrit, avec la version du système et le type d’appareil (iPhone ou iPad).</p>
+      </section>
+      <section id="sans-compte">
+        <h2>Sans compte</h2>
+        <p>Tout ce que tu fais dans Ahzab est rangé sur ton téléphone : tes réponses à l’accueil, tes pages connues, ta boucle de révision, tes fautes, tes trophées.</p>
+        <p>Pour te faire entendre les récitateurs et afficher le mushaf, Ahzab télécharge des fichiers depuis des serveurs de récitations et de textes coraniques (mp3quran, quranicaudio, everyayah, quran.com, jsDelivr, GitHub). Comme pour tout téléchargement, ces serveurs voient l’adresse de ton téléphone, rien d’autre.</p>
+        <p>Les mises à jour de l’application arrivent par le service d’Expo, qui fournit Ahzab.</p>
+        <p>Les rappels sont programmés sur le téléphone lui-même : aucun serveur ne les envoie.</p>
+      </section>
+      <section id="avec-un-compte">
+        <h2>Avec un compte</h2>
+        <p>Le compte est facultatif. Il sauvegarde ta progression et la retrouve sur un autre appareil, et il ouvre la Communauté. Il est hébergé par Supabase, sur des serveurs situés en Irlande, dans l’Union européenne.</p>
+        <p>Il garde ton adresse e-mail (par Google ou par code), ton prénom, les réponses de l’accueil (genre, âge, objectif, langue, d’où tu as connu Ahzab, ce qui coince pour toi), tes réglages et ta progression, et la ville choisie pour les horaires de prière si tu l’as donnée, à une dizaine de kilomètres près.</p>
+        <p>Supprimer ton compte, dans Paramètres, efface de nos serveurs ton compte et tout ce qui y est sauvegardé. Ce qui est sur ton téléphone y reste.</p>
+      </section>
+      <section id="la-communaute">
+        <h2>La Communauté</h2>
+        <p>Ton pseudo et ton prénom sont visibles de qui te cherche par ton pseudo ou ton code, et de tes amis. Tes partenaires voient ce que tu choisis de leur montrer : l’avancée de ton objectif du jour, ta série, tes pages de la semaine, et ta carte du Coran si tu la leur ouvres.</p>
+        <p>Dans un groupe, chacun voit l’avancée commune et la khatma, et le fil ne nomme personne. Dans une famille, le fil nomme chacun, et un enfant partage ses fautes avec ses parents.</p>
+        <p>Encouragements, corrections et récitations transmises ne sont visibles que des personnes concernées.</p>
+        <p>Les messages que tu écris à un ami sont conservés sur nos serveurs, avec la conversation, et ne sont lisibles que de vous deux. Ahzab n’indique ni si tu es en ligne, ni si tu as lu un message. Retirer un message efface son texte ; il n’en reste que la mention « Message retiré ». Supprimer ton compte efface tes conversations.</p>
+      </section>
+      <section id="les-statistiques-d-usage">
+        <h2>Les statistiques d’usage</h2>
+        <p>Pour savoir ce qui aide vraiment, Ahzab mesure son usage avec PostHog, hébergé dans l’Union européenne (Francfort). Partent : les écrans ouverts et les gestes faits (une séance commencée, une page de l’accueil franchie, un réglage changé), des nombres et des choix (ton objectif, ton niveau, ta tranche d’âge, ta lecture), le modèle et le système du téléphone, la version d’Ahzab, et les pannes rencontrées.</p>
+        <p>Ne partent jamais : ton prénom, ton e-mail, ta voix, ce que tu récites, ta position, ton âge exact, le texte de tes messages.</p>
+        <p>Ces mesures sont rattachées à un identifiant tiré au hasard, et à ton compte si tu en as un, pour ne compter qu’une personne sur deux appareils. Ton adresse IP sert à connaître ton pays, puis n’est pas conservée. Les mesures sont gardées un an.</p>
+        <p>Tu peux les couper à tout moment : Paramètres › Confidentialité › Statistiques d’usage. Plus rien ne part alors.</p>
+      </section>
+      <section id="moins-de-quinze-ans">
+        <h2>Moins de quinze ans</h2>
+        <p>Si l’âge donné à l’accueil est inférieur à quinze ans, la mesure reste minimale : aucun profil n’est constitué, rien n’est rattaché au compte, et l’identifiant est oublié à chaque fermeture de l’application. Les gestes comptent dans les totaux, jamais dans un parcours individuel.</p>
+      </section>
+      <section id="l-abonnement">
+        <h2>L’abonnement</h2>
+        <p>Pendant la bêta, rien n’est payé : l’abonnement est simulé sur le téléphone. Quand il sera réel, le paiement passera par l’App Store ou Google Play : Ahzab ne verra jamais tes coordonnées bancaires. Cette page sera mise à jour avant.</p>
+      </section>
+      <section id="tes-droits">
+        <h2>Tes droits</h2>
+        <p>Tu peux demander à voir, corriger, emporter ou effacer les données qui te concernent, et t’opposer à leur usage. Supprimer ton compte et couper les statistiques se font directement dans Paramètres.</p>
+        <p>Si une réponse ne te satisfait pas, tu peux saisir la CNIL (<a href="https://www.cnil.fr">cnil.fr</a>).</p>
+      </section>
+      <section id="nous-ecrire">
+        <h2>Nous écrire</h2>
+        <p>Ahzab est édité par Ismael Taghbalout.</p>
+        <p>Pour toute question sur tes données, ou pour demander leur effacement : <a href="mailto:ismael.taghbalout@gmail.com">ismael.taghbalout@gmail.com</a>.</p>
+      </section>
+    <footer>Ahzab — réviser le Coran par la récitation</footer>
+  </main>
+</body>
+</html>
