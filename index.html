@@ -2,9 +2,47 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="refresh" content="0; url=confidentialite/">
-  <link rel="canonical" href="https://ismaeltag-ui.github.io/ahzab/confidentialite/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Ahzab</title>
+  <style>
+  :root {
+    --bg: #ffffff; --card: #ffffff; --text: #0b0b0c; --muted: #5c5c63; --line: #e4e4e8; --link: #0b0b0c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #000000; --card: #0f0f11; --text: #f4f4f6; --muted: #a1a1aa; --line: #26262b; --link: #f4f4f6;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #000000; --card: #0f0f11; --text: #f4f4f6; --muted: #a1a1aa; --line: #26262b; --link: #f4f4f6;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 680px; margin: 0 auto; padding: 56px 16px 72px; }
+  .brand { font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin: 0 0 8px; }
+  h1 { font-size: 34px; line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 6px; }
+  .updated { color: var(--muted); font-size: 14px; margin: 0 0 32px; }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 20px 20px 6px; margin: 0 0 14px; }
+  h2 { font-size: 18px; letter-spacing: -0.01em; margin: 0 0 10px; }
+  p { color: var(--muted); margin: 0 0 14px; }
+  a { color: var(--link); text-underline-offset: 3px; }
+  footer { color: var(--muted); font-size: 13px; text-align: center; margin-top: 32px; }
+  footer nav { margin-bottom: 8px; }
+  footer nav a { margin: 0 8px; }
+</style>
 </head>
-<body><a href="confidentialite/">Confidentialité d’Ahzab</a></body>
+<body>
+  <main>
+    <p class="brand">Ahzab</p>
+    <h1>Réviser le Coran par la récitation</h1>
+    <section>
+      <p><a href="confidentialite/">Confidentialité</a></p>
+      <p><a href="conditions/">Conditions d’utilisation</a></p>
+    </section>
+  </main>
+</body>
 </html>
